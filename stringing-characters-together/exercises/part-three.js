@@ -9,7 +9,7 @@ console.log(language[0] + language[4]);
 //3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
 console.log(`The abbreviatioin for \'JavaScript' is \'${language[0]+language[4]}'`);
 //4. Just for fun, try chaining 3 or more methods together, and then print the result.
-console.log(language.replace('v','w'));
+console.log(language.replace('v','w') + language.slice(0,1) + language.toUpperCase());
 
 //Part Three section Two
 console.log(language);
