@@ -54,7 +54,7 @@ function makeIsoscelesTriangle(height) {
       for (let i = 0; i < height; i++ ) {
          triangle += (makeSpaceLine(height - i - 1, 2*i + 1) + '\n');
       }
-      return triangle;
+      return triangle.slice(0,-1);
 }
 
 function makeDiamond(height) {
@@ -66,23 +66,24 @@ function makeDiamond(height) {
       revTriangle = reverseString(triangle);
       diamond = triangle + revTriangle;
 
-   return diamond;
+   return diamond.slice(0,-1);
 }
 
 function reverseString(str) {
    revString = '';
 
    for(let i = 0; i < str.length; i++) {
-      revString = str[i] + revString;
+      revString = str[i] + revString ;
    }
-   return revString;
+   return revString.slice(0,-1);
 }
-/*console.log(makeLine(7));
-console.log(makeSquare(20));
-console.log(makeRectangle(4,10));
-console.log(makeDownwardStair(10));*/
-console.log(makeSpaceLine(5,5));
+//console.log(makeLine(7));
+//console.log(makeSquare(10));
+//console.log(makeRectangle(4,10));
+//console.log(makeDownwardStair(10));
+//console.log(makeSpaceLine(5,5));
 console.log(makeIsoscelesTriangle(10));
 console.log(makeDiamond(6));
+
 
 

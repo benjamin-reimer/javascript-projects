@@ -25,3 +25,7 @@ c) Print the new array to confirm your work.
 */
 
 
+let f1 = function(str) {
+    return str + str;
+}
+console.log(f1('hello'));

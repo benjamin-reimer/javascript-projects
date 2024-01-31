@@ -13,6 +13,11 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
   
+  for (let i = 1; i <= numMeals; i++) {
+      for(let j = 0; j < pantry.length; j++) {
+        
+      }
+  }
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
 
