@@ -73,16 +73,16 @@ let crewReport =  (animal) => {
    return `${animal["name"]} is a ${animal["species"]}. They are ${animal["age"]} years old and ${animal["mass"]} kilograms. Their ID is ${animal["astronautID"]}.`;
 }
 
-function fitnessTest(arr) {
+function fitnessTest(crewArr) {
    let results = []
-for (let i = 0; i < arr.length; i++) {
+for (const crewMember of crewArr) {
    let numSteps = 0;
    let numTurns = 0;
-   while(numSteps < 20) {
-      numSteps += arr[i].move();
+   while(numSteps <= 20) {
+      numSteps += crewMember.move();
       numTurns ++;
    }
-   results.push(`${arr[i].name} took ${numTurns} turns to take 20 steps.`);
+   results.push(`${crewMember.name} took ${numTurns} turns to take 20 steps.`);
 }
 return results;
 }
